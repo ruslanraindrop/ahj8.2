@@ -89,7 +89,6 @@ export default class ChatWidget {
 
   onUnload() {
     Listener.onUnload.call(this);
-    this.onWSClose.call(this);
   }
 
   redrawOnlineList({ data }) {
