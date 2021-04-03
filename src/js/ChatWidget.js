@@ -66,10 +66,7 @@ export default class ChatWidget {
     this.modalBtnsEl.forEach((btn) => {
       btn.addEventListener('click', (event) => this.onBtnClick(event));
     });
-
-    this.ws.addEventListener('open', () => this.onWSOpen());
     this.ws.addEventListener('message', (event) => this.onWSMessage(event));
-    this.ws.addEventListener('close', (event) => this.onWSClose(event));
   }
 
   onBtnClick(event) {
