@@ -86,14 +86,6 @@ export default class ChatWidget {
     }
   }
 
-  onWSOpen() {
-    Listener.onWSOpen.call(this);
-  }
-
-  onWSClose() {
-    Listener.onWSClose.call(this);
-  }
-
   onWSMessage(event) {
     Listener.onWSMessage.call(this, event);
   }
